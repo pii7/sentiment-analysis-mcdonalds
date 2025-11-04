@@ -16,12 +16,11 @@ Model dibuat untuk mengklasifikasikan ulasan menjadi **positif**, **negatif**, a
 ---
 
 3. Ringkasan Dataset
-| Atribut | Deskripsi |
-|----------|------------|
-| `review_text` | Isi ulasan pelanggan |
-| `rating` | Skor numerik (jika tersedia) |
-| `sentiment_label` | Kategori hasil labeling (positif/negatif/netral) |
-| `source` | Asal platform data |
+a. Usernamne : kolom ini berisi username pelanggan
+b. Rating : kolom ini berisikan rating antara 1-5
+c. review_text : kolom ini beirisi ulasan komentar pelanggan
+d. source : kolom ini berisi sumber dataset. ex: dataset_1 berarti data yang berasal dari sumber data pertama
+
 
 > **Total data:** 35,421 baris.  
 > **Jumlah sumber:** 3 sumber data
