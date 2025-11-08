@@ -11,7 +11,7 @@ Model dibuat untuk mengklasifikasikan ulasan menjadi **positif**, **negatif**, a
 - Menerapkan tahapan **pengembangan model Machine Learning** sesuai teori mata kuliah.  
 - Melakukan **preprocessing** dan **pembersihan teks** dari berbagai sumber.  
 - Mengembangkan model untuk analisis sentimen konsumen McDonald’s.  
-- Mengevaluasi model dengan metrik seperti **accuracy**, **precision**, **recall**, dan **F1-score**.
+- Mengevaluasi model dengan metrik **ROC-AUC** 
 
 ---
 
@@ -39,7 +39,7 @@ b. **Feature Extraction:**
 
 c. **Modeling:**  
    - Algoritma: Naive Bayes / SVM / Logistic Regression
-   - Evaluasi performa dengan confusion matrix.  
+   - Evaluasi performa dengan confusion matrix dan ROC-AUC.  
 
 ---
 
@@ -50,7 +50,7 @@ Model terbaik menunjukkan performa dengan **akurasi sebesar 91%** dengan algorit
 
 6. Tools & Libraries
 - Google Colab  
-- pandas, numpy, scikit-learn, nltk, matplotlib, seaborn  
+- pandas, numpy, scikit-learn, nltk, matplotlib, seaborn, dan joblib  
 
 ---
 ## DOCKER
