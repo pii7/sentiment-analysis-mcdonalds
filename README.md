@@ -50,7 +50,8 @@ Model terbaik menunjukkan performa dengan **akurasi sebesar 91%** dengan algorit
 
 ## 6. Tools & Libraries
 a. Google Colab  
-b. pandas, numpy, scikit-learn, nltk, matplotlib, seaborn, dan joblib  
+b. VS Code
+c. pandas, numpy, scikit-learn, nltk, matplotlib, seaborn, dan joblib  
 
 ---
 ### DOCKER
@@ -104,15 +105,15 @@ Semua file hasil akan muncul di: D:\docker_hasil\
 
 Container ini menjalankan `main.py` yang mencakup:
 
-## a. Explorasi data  
-## b. Cleaning dan preprocessing  
-## c. Training model:  
-- SVM + tuning  
-- Logistic Regression (varian Count/Tfidf + SVD)  
-- Naive Bayes  
-## d. Confusion Matrix dan ROC Curve  
-## e. Perbandingan model  
-## f. Implementasi dengan data yang sudah dimasukan (tanpa input manual karena docker memiliki sifat non interaktif)
+a. Explorasi data  
+b. Cleaning dan preprocessing  
+c. Training model:  
+    - SVM + tuning  
+    - Logistic Regression (varian Count/Tfidf + SVD)  
+    - Naive Bayes  
+d. Confusion Matrix dan ROC Curve  
+e. Perbandingan model  
+f. Implementasi dengan data yang sudah dimasukan (tanpa input manual karena docker memiliki sifat non interaktif)
 Container otomatis menjalankan prediksi contoh teks: "Ayamnya enak banget, tapi aplikasinya error pas mau bayar"
 
 Hasilnya disimpan ke: /app/output/auto_inference_results.csv
@@ -122,12 +123,15 @@ Hasilnya disimpan ke: /app/output/auto_inference_results.csv
 ## 5. Hasil Output
 
 Setelah container selesai, folder output berisi:
-
-a. `*.png` → grafik,
-b.  `*.pkl` → model final,
-c.  `auto_inference_results.csv` → hasil implementasi,
-d.  `all_models_bin.pkl` → bundle 3 model final,
+a. Explorasi data  
+b. Cleaning dan preprocessing  
+c. Training model:  
+   - '.*png` → grafik,
+   -  `.*pkl` → model final,
+   -  `auto_inference_results.csv` → hasil implementasi,
+   -  `all_models_bin.pkl` → bundle 3 model final,
 dsb.
+
 ---
 
 ## 6. Catatan Penting
