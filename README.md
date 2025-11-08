@@ -123,9 +123,8 @@ Hasilnya disimpan ke: /app/output/auto_inference_results.csv
 
 Setelah container selesai, folder output berisi:
 
-- `*.png` → grafik CM & ROC,
+- `*.png` → grafik,
 - `*.pkl` → model final,
-- `*_pred_test.csv` → hasil prediksi model,
 - `auto_inference_results.csv` → hasil implementasi,
 - `all_models_bin.pkl` → bundle 3 model final,
 dsb.
