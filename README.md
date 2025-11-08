@@ -54,6 +54,8 @@ Model terbaik menunjukkan performa dengan **akurasi sebesar 91%** dengan algorit
 
 ---
 **Docker**
+
+
 Analisis sentimen berbasis Machine Learning menggunakan tiga algoritma (SVM, Logistic Regression, dan Naive Bayes) yang sudah dikemas dalam Docker agar dapat dijalankan di lingkungan mana pun tanpa perlu menginstal library tambahan.
 
 Seluruh pipeline berjalan otomatis: mulai dari load data, cleaning, training, evaluasi, hingga menyimpan file output (gambar, model .pkl, CSV hasil prediksi).
