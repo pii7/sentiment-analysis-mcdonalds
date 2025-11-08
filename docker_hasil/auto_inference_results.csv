@@ -1,0 +1,4 @@
+Model,Input,Prediksi,p(neg),p(pos)
+SVM (Linear),"Ayamnya enak banget, tapi aplikasinya error pas mau bayar",neg,0.7303993812521409,0.26960061874785907
+Logistic Regression,"Ayamnya enak banget, tapi aplikasinya error pas mau bayar",neg,0.6723766494744097,0.32762335052559033
+Naive Bayes (Complement),"Ayamnya enak banget, tapi aplikasinya error pas mau bayar",neg,0.7347188003527891,0.2652811996472112
