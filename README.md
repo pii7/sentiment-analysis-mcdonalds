@@ -1,4 +1,4 @@
-1. Sentiment Analysis - McDonald's Reviews  
+## 1. Sentiment Analysis - McDonald's Reviews  
 
 Proyek ini merupakan tugas mata kuliah **Teknik Pengembangan Model**, dengan fokus pada **pengembangan model Machine Learning** untuk menganalisis **sentimen pelanggan terhadap McDonald’s**.  
 
@@ -7,15 +7,15 @@ Model dibuat untuk mengklasifikasikan ulasan menjadi **positif**, **negatif**, a
 
 ---
 
-2. Tujuan Proyek
-- Menerapkan tahapan **pengembangan model Machine Learning** sesuai teori mata kuliah.  
-- Melakukan **preprocessing** dan **pembersihan teks** dari berbagai sumber.  
-- Mengembangkan model untuk analisis sentimen konsumen McDonald’s.  
-- Mengevaluasi model dengan metrik **ROC-AUC** 
+## 2. Tujuan Proyek
+a. Menerapkan tahapan **pengembangan model Machine Learning** sesuai teori mata kuliah.
+b. Melakukan **preprocessing** dan **pembersihan teks** dari berbagai sumber.  
+c. Mengembangkan model untuk analisis sentimen konsumen McDonald’s.  
+d. Mengevaluasi model dengan metrik **ROC-AUC** 
 
 ---
 
-3. Ringkasan Dataset
+## 3. Ringkasan Dataset
 a. Usernamne : kolom ini berisi username pelanggan
 b. Rating : kolom ini berisikan rating antara 1-5
 c. review_text : kolom ini beirisi ulasan komentar pelanggan
@@ -27,7 +27,7 @@ d. source : kolom ini berisi sumber dataset. ex: dataset_1 berarti data yang ber
 
 ---
 
-4. Metodologi
+## 4. Metodologi
 a. **Preprocessing:**  
    - Case folding  
    - Stopword removal  
@@ -43,17 +43,17 @@ c. **Modeling:**
 
 ---
 
-5. Hasil
+## 5. Hasil
 Model terbaik menunjukkan performa dengan **akurasi sebesar 91%** dengan algoritma SVM, dan mampu mengenali pola sentimen pelanggan dengan baik.  
 
 ---
 
-6. Tools & Libraries
-- Google Colab  
-- pandas, numpy, scikit-learn, nltk, matplotlib, seaborn, dan joblib  
+## 6. Tools & Libraries
+a. Google Colab  
+b. pandas, numpy, scikit-learn, nltk, matplotlib, seaborn, dan joblib  
 
 ---
-## DOCKER
+### DOCKER
 
 
 Analisis sentimen berbasis Machine Learning menggunakan tiga algoritma (SVM, Logistic Regression, dan Naive Bayes) yang sudah dikemas dalam Docker agar dapat dijalankan di lingkungan mana pun tanpa perlu menginstal library tambahan.
@@ -104,15 +104,15 @@ Semua file hasil akan muncul di: D:\docker_hasil\
 
 Container ini menjalankan `main.py` yang mencakup:
 
-### ✔ Explorasi data  
-### ✔ Cleaning dan preprocessing  
-### ✔ Training model:  
+## a. Explorasi data  
+## b. Cleaning dan preprocessing  
+## c. Training model:  
 - SVM + tuning  
 - Logistic Regression (varian Count/Tfidf + SVD)  
 - Naive Bayes  
-### ✔ Confusion Matrix dan ROC Curve  
-### ✔ Perbandingan model  
-### ✔ Implementasi dengan data yang sudah dimasukan (tanpa input manual karena docker memiliki sifat non interaktif)
+## d. Confusion Matrix dan ROC Curve  
+## e. Perbandingan model  
+## f. Implementasi dengan data yang sudah dimasukan (tanpa input manual karena docker memiliki sifat non interaktif)
 Container otomatis menjalankan prediksi contoh teks: "Ayamnya enak banget, tapi aplikasinya error pas mau bayar"
 
 Hasilnya disimpan ke: /app/output/auto_inference_results.csv
@@ -123,18 +123,18 @@ Hasilnya disimpan ke: /app/output/auto_inference_results.csv
 
 Setelah container selesai, folder output berisi:
 
-- `*.png` → grafik,
-- `*.pkl` → model final,
-- `auto_inference_results.csv` → hasil implementasi,
-- `all_models_bin.pkl` → bundle 3 model final,
+a. `*.png` → grafik,
+b.  `*.pkl` → model final,
+c.  `auto_inference_results.csv` → hasil implementasi,
+d.  `all_models_bin.pkl` → bundle 3 model final,
 dsb.
 ---
 
 ## 6. Catatan Penting
 
-- Semua path output di `main.py` telah disesuaikan menjadi `/app/output/`.
-- File dataset **tidak boleh** disimpan dalam container, harus di-mount dari luar.
-- Jika ingin push image ke Docker Hub:
+a. Semua path output di `main.py` telah disesuaikan menjadi `/app/output/`.
+b. File dataset **tidak boleh** disimpan dalam container, harus di-mount dari luar.
+c. Jika ingin push image ke Docker Hub:
 
 docker tag sentiment-mcd3:latest katarina77/sentiment-mcd3:latest
 docker push katarina77/sentiment-mcd3:latest
