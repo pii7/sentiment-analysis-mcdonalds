@@ -137,7 +137,9 @@ dsb.
 ## 6. Catatan Penting
 
 a. Semua path output di `main.py` telah disesuaikan menjadi `/app/output/`.
+
 b. File dataset **tidak boleh** disimpan dalam container, harus di-mount dari luar.
+
 c. Jika ingin push image ke Docker Hub:
 
 docker tag sentiment-mcd3:latest katarina77/sentiment-mcd3:latest
